@@ -4,6 +4,12 @@
   padding: 0;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .home {
   height: 100vh;
   padding-top: 40vh;
@@ -13,7 +19,97 @@
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../img/model-1.jpg) center top;
   background-size: cover;
 }
+.home .home-name {
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  border-bottom: 2px solid #ffffff;
+}
+.home .home-name > .home-name-last {
+  color: #ff652f;
+  font-weight: 700;
+}
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  top: 1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn .menu-btn-element {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 28px;
+  height: 3px;
+  background-color: #ffffff;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn .menu-btn-element::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 3px;
+  background-color: #ffffff;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn .menu-btn-element::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 22px;
+  height: 3px;
+  background-color: #ffffff;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn .menu-btn-element.open {
+  transform: rotate(720deg);
+  background: transparent;
+}
+.menu-btn .menu-btn-element.open::before {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+.menu-btn .menu-btn-element.open::after {
+  width: 28px;
+  transform: rotate(-45deg) translate(3px, -7px);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.98;
+  visibility: hidden;
+}
+.navbar.open {
+  visibility: visible;
+}
+.navbar .menu-navbar {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  height: 100vh;
+  overflow: auto;
+  background-color: #272727;
+  list-style-type: none;
+  padding-right: 1rem;
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
+}
 body {
   background-color: #272727;
   color: #ffffff;
@@ -49,6 +145,7 @@ main .social-icons {
 }
 main .social-icons a {
   padding: 0.4rem;
+  transition: all 0.5s ease-in-out;
 }
 main .social-icons a:hover {
   color: #ff652f;
