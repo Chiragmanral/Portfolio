@@ -81,7 +81,7 @@
         @include transition-ease;
 
         &.open {
-            
+           transform: translateY(0); 
         }
     }
 }

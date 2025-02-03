@@ -110,6 +110,10 @@
   transform: translateY(-100%);
   transition: all 0.5s ease-in-out;
 }
+.navbar .menu-navbar.open {
+  transform: translateY(0);
+}
+
 body {
   background-color: #272727;
   color: #ffffff;
