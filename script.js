@@ -1,7 +1,10 @@
 const menuBtn = document.querySelector('.menu-btn');
 const mainMenuBtn = document.querySelector('.menu-btn-element');
+const nav = document.querySelector('.navbar');
+const menuNav = document.querySelector('.menu-navbar');
+const navItems = document.querySelectorAll('.menu-navbar-item');
 
-let showMenu = false;
+// let showMenu = false;
 
 menuBtn.addEventListener('click', toggleMenu);
 
@@ -10,13 +13,25 @@ menuBtn.addEventListener('click', toggleMenu);
 // If you use arrow functions then you can't use them before declaring and initializing bcz they don't get hoisted.
 
 function toggleMenu() {
-    if(!showMenu) {
-        mainMenuBtn.classList.add('open');
-        showMenu = true;
-    }
+    // if(!showMenu) {
+        mainMenuBtn.classList.toggle('open');
+        nav.classList.toggle('open');
+        menuNav.classList.toggle('open');
+        navItems.forEach((item) => {
+            item.classList.toggle('open');
+        });
 
-    else {
-        mainMenuBtn.classList.remove('open');
-        showMenu = false;
-    }
+        // showMenu = true;
+    // }
+
+    // else {
+    //     mainMenuBtn.classList.remove('open');
+    //     nav.classList.remove('open');
+    //     menuNav.classList.remove('open');
+    //     navItems.forEach((item) => {
+    //         item.classList.remove('open');
+    //     });
+
+    //     showMenu = false;
+    // }
 }

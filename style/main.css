@@ -113,6 +113,16 @@
 .navbar .menu-navbar.open {
   transform: translateY(0);
 }
+.navbar .menu-navbar .menu-navbar-item {
+  transform: translateX(100vw);
+  transition: all 0.5s ease-in-out;
+}
+.navbar .menu-navbar .menu-navbar-item.open {
+  transform: translateX(0);
+}
+.navbar .menu-navbar .menu-navbar-item.active > a {
+  color: #ff652f;
+}
 
 body {
   background-color: #272727;
