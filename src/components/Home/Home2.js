@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
@@ -23,7 +22,7 @@ function Home2() {
               <i>
                 <b className="purple">
                   {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
+                  JavaScript, TypeScript, C++, Node.js, and Angular{" "}
                 </b>
               </i>
               — and I enjoy working across both backend and frontend stacks.
@@ -33,17 +32,17 @@ function Home2() {
               <i>
                 <b className="purple">
                   {" "}
-                  Web Applications, Blockchain Solutions,{" "}
+                  Web Applications, Data Structures And Algorithms,{" "}
                 </b>
               </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
+              and exploring new ways to solve problems.
               <br />
               <br />
               Whenever possible, I love building projects with
               <b className="purple"> Node.js </b> and modern frameworks like{" "}
               <i>
                 <b className="purple">React.js</b> and{" "}
-                <b className="purple">Next.js</b>.
+                <b className="purple">Angular.js</b>.
               </i>
             </p>
           </Col>
