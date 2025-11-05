@@ -3,7 +3,7 @@
   <a href="https://www.chirags.tech/login" target="_blank">chirag.tech</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="./Images/readme-img.png" />
+  <img alt="Demo" src="./Images/readme-img2.png" />
 </div>
 
 <br/>
