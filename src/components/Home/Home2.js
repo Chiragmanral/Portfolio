@@ -32,7 +32,7 @@ function Home2() {
               <i>
                 <b className="purple">
                   {" "}
-                  Web Applications, Data Structures And Algorithms,{" "}
+                  Web Applications, optimizing performance,{" "}
                 </b>
               </i>
               and exploring new ways to solve problems.
@@ -41,8 +41,9 @@ function Home2() {
               Whenever possible, I love building projects with
               <b className="purple"> Node.js </b> and modern frameworks like{" "}
               <i>
-                <b className="purple">React.js</b> and{" "}
-                <b className="purple">Angular.js</b>.
+                <b className="purple">React</b> and{" "}
+                <b className="purple">Angular</b>, bringing ideas to life with
+                clean design and intuitive interfaces.
               </i>
             </p>
           </Col>
