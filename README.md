@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website<br/>
-  <a href="https://www.chirags.tech/login" target="_blank">chirag.tech</a>
+  <a href="https://portfolio-ebon-xi-86.vercel.app/" target="_blank">chirag.tech</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="./Images/readme-img2.png" />
